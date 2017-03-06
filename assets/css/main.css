@@ -1,0 +1,314 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%,
+  height: 100vh;
+  background-color: #D2C5B1;
+}
+
+header {
+  color: #fff;
+  font-size: 1.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header span {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+
+.nav {
+  text-transform: uppercase;
+  color: #E92F24;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 80px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav ul li {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: row;
+  color: #E92F24;
+  font-weight: 700;
+  font-size: 1.375em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 3.9375em;
+  text-transform: uppercase;
+  color: #34281D;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.subtext {
+  font-size: 1.875em;
+  color: #34281D;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+.ingredients form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  background-color: #DBD1C0;
+  color: #34281D;
+  border: 1px solid #E6DED3;
+  border-radius: 2px;
+  margin: 40px;
+}
+
+.ingredients h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.ingredients form input {
+  font-size: 1.5625em;
+/*  flex-basis: 40%;
+*/}
+
+label {
+  display: flex;
+  flex-basis: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-bottom: 55px;
+}
+
+.textbox {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #BBA78B;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.name-smores {
+  font-size: 1.5em;
+  color: #34281D;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-smores h3 {
+  margin-left: 40px;
+}
+
+.name-smores input {
+  margin-right: 40px;
+}
+
+.red-button {
+  display: flex;
+  flex-direction: row;
+/*  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 90px;*/
+  margin: 0 auto;
+}
+
+.red-button button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #E9300F;
+  border: 2px solid #A82B12;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.inspiration {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #34281D;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ready-to-eat {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendations {
+  background-color: #4F3B2A;
+  color: #D2C5B1;
+  margin: 20px 40px;
+  border: 2px solid #32261B;
+  border-radius: 2px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.recommendations h3 {
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-button {
+  margin-left: 40px;
+}
+
+.right-button {
+  display: flex;
+  margin-right: 40px;
+}
+
+
+.site-navigation {
+  background-color: #DBD1C0;
+  color: #E93010;
+  border: 2px solid #E6DED3;
+  border-radius: 2px;
+  font-size: 1.4375em;
+  text-decoration: underline;
+  padding: 30px 20px;
+}
+
+.buttom-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-one {
+  margin-left: 40px;
+}
+
+.button-eight {
+  margin-right: 40px;
+}
+
+@media screen and (min-width: 680px) {
+
+  .build-it {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ready-to-eat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttom-numbers {
+    margin-top: 0px;
+  }
+
+  .right-button {
+    order: 8;
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
