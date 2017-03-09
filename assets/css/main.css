@@ -1,7 +1,7 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:  Project Name Here
+AUTHOR:   Your Name Here
 ==============================================
 
 TABLE OF CONTENTS:
@@ -23,7 +23,6 @@ html, body {
 
 header {
   color: #fff;
-  font-size: 1.625em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +32,19 @@ header {
 .logo {
   background-image: url(../img/logo.png);
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 header span {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 50px;
+/*  margin-left: 20px;
+  margin-right: 20px;*/
+  margin-bottom: 25px;
+  margin-top: 15px;
+  font-size: 0.6875em;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -52,20 +55,23 @@ header span {
   flex-direction: row;
   justify-content: center;
   font-family: 'Lato', sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .nav ul {
   display: flex;
   flex-direction: row;
-  margin-left: 40px;
-  margin-right: 40px;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
 }
 
 .nav ul li {
   display: flex;
   flex-direction: row;
-  padding-right: 10px;
+/*  padding-right: 50px;
+*/
 }
 
 .nav a {
@@ -73,7 +79,8 @@ header span {
   flex-direction: row;
   color: #E92F24;
   font-weight: 700;
-  font-size: 1.375em;
+  font-size: 0.6875em;
+
 }
 
 .main {
@@ -84,26 +91,58 @@ header span {
 }
 
 .main h1 {
-  font-size: 3.9375em;
+  font-size: 1.96875em;
   text-transform: uppercase;
   color: #34281D;
   font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .subtext {
-  font-size: 1.875em;
+  font-size: 0.9375em;
   color: #34281D;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
 
-.ingredients form {
+.frame-sprite {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(../img/icons.png);
+  background-position: -2px;
+  width: 41px;
+  height: 37px;
+  margin: 0 auto;
+  margin-top: -17px;
+}
+
+.marshmallow-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -44px;
+  width: 44px;
+  height: 40px;
+    margin: 0 auto;
+  margin-top: -17px;
+}
+
+.candy-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -88px;
+  width: 25px;
+  height: 37px;
+    margin: 0 auto;
+  margin-top: -17px;
+}
+
+.accessories-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -121px;
+  width: 40px;
+  height: 37px;
+    margin: 0 auto;
+  margin-top: -17px;
 }
 
 .ingredients {
@@ -113,45 +152,68 @@ header span {
   color: #34281D;
   border: 1px solid #E6DED3;
   border-radius: 2px;
-  margin: 40px;
+  margin: 20px;
 }
 
 .ingredients h2 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2em;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  font-size: 1em;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-weight: 900px;
+}
+
+.ingredients form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .ingredients form input {
-  font-size: 1.5625em;
+  font-size: 0.78125em;
 /*  flex-basis: 40%;
 */}
 
 label {
   display: flex;
   flex-basis: 90%;
+  margin-right: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-bottom: 55px;
+  margin-left: 10px;
+  margin-bottom: 27px;
+}
+
+form div {
+  display: flex;
+  width: 100%
 }
 
 .textbox {
   width: 100%;
-  height: 30px;
   border: 2px solid #BBA78B;
   border-radius: 2px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
+.textbox2 {
+  width: 45%;
+  border: 2px solid #BBA78B;
+  border-radius: 2px;
+  margin-left: 50px;
+}
+
+
 .name-smores {
-  font-size: 1.5em;
+  font-size: 0.75em;
   color: #34281D;
   text-transform: uppercase;
   display: flex;
@@ -160,21 +222,20 @@ form {
 }
 
 .name-smores h3 {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .name-smores input {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .red-button {
   display: flex;
   flex-direction: row;
-/*  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 90px;*/
-  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 45px;
 }
 
 .red-button button {
@@ -182,20 +243,22 @@ form {
   text-transform: uppercase;
   background-color: #E9300F;
   border: 2px solid #A82B12;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8125em;
+  flex-basis: 100%;
 }
 
 .inspiration {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1em;
   color: #34281D;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .ready-to-eat {
@@ -206,67 +269,114 @@ form {
 .recommendations {
   background-color: #4F3B2A;
   color: #D2C5B1;
-  margin: 20px 40px;
+  margin: 10px 20px;
   border: 2px solid #32261B;
   border-radius: 2px;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 .recommendations h3 {
   text-transform: uppercase;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  font-size: 0.8125em;
+}
+
+.recommendations p {
+  font-size: 0.78125em;
 }
 
 .mobile-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 20px;
+  flex-wrap: wrap;
 }
-
-.left-button {
-  margin-left: 40px;
-}
-
-.right-button {
-  display: flex;
-  margin-right: 40px;
-}
-
 
 .site-navigation {
   background-color: #DBD1C0;
   color: #E93010;
   border: 2px solid #E6DED3;
   border-radius: 2px;
-  font-size: 1.4375em;
+  font-size: 0.71875em;
   text-decoration: underline;
-  padding: 30px 20px;
+  padding: 15px 10px;
+}
+
+.previous-button {
+    margin-right: 30%;
+}
+
+.next-button {
+      margin-left: 30%;
+
+}
+
+.site-navigation a {
+  color: #E93010;
 }
 
 .buttom-numbers {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .button-one {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .button-eight {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
+
+
 @media screen and (min-width: 680px) {
+
+  .nav ul {
+    justify-content: space-between;
+  }
+
+  .ingredients-parent {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .ingredients {
+    flex-basis: 45%;
+  }
+
+  .marshmallow-last {
+    margin-top: 0 auto;
+  }
 
   .build-it {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .name-smores {
+    flex-basis: 60%;
+  }
+
+  .name-smores h3 {
+    flex-basis: 30%;
+  }
+
+  .textbox2 {
+    flex-basis: 70%;
+    height: 25px;
+  }
+
+  .red-button {
+    flex-basis: 40%;
+    margin-top: 1px;
   }
 
   .ready-to-eat {
@@ -275,40 +385,45 @@ form {
     flex-wrap: wrap;
   }
 
-  .buttons {
+  .recommendations {
+    flex-basis: 44%;
+  }
+
+  /*.buttons {
     display: flex;
     flex-direction: row;
+        justify-content: space-between;
+
   }
 
-  .buttom-numbers {
-    margin-top: 0px;
+  .mobile-buttons {
+    display: flex;
+    flex-direction: row;
+        justify-content: space-between;
+
   }
 
-  .right-button {
+  .site-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-navigation a {
+        justify-content: space-between;
+
+  }*/
+
+  .next-button {
     order: 8;
   }
 
-  .ingredients {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .previous-button {
+    margin-right: 0%;
   }
 
+  .next-button {
+        margin-left: 0%;
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
